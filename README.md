@@ -6,5 +6,9 @@ Method of Solution: Linear Regression, Quadratic Regression to visualize the dat
 
 Objectives: 
   1. Create modules that allow for one to quickly make lines/quadratics of best fit for a given pandas dataframe.
-  2.  Read the excel spreadsheet provided by the NCES via pandas and investigate the data to find which graph gives the strongest correlation.
+  2.  Read the excel spreadsheet provided by the NCES via pandas and:
+      a. Graph the line/quadratic of best fit for the average scores of 4th and 8th grade students
+      b. Graph the line/quadratic of best for for the vaerage scores of economically (dis)advantaged 4th and 8th grade students
+  3. Make Observations concerning the positive/negative trend of the data as well as the strength of the correlation to its line/quadratic of best fit.
 Similar Work: NCES posts regular data visualizations of certain aspects of their data. 
+ 
