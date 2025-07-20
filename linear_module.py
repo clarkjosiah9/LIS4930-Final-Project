@@ -1,8 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+#Linear Regression Module
+#Purpose: Given a set of x and y vectors, construct of line of best fit to give predicted y values
 
-def estimate_coef(x,y): #find b0 and b1
+def estimate_coef(x,y): #find b0 and b1 using Ordinary Least Squares method (see https://statproofbook.github.io/P/slr-ols.html for formal justification of formulas used)
     n = np.size(x)
     m_x = np.mean(x)
     m_y = np.mean(y)
@@ -30,7 +32,7 @@ def plot_regression_line(x, y, b):
   plt.xlabel('x')
   plt.ylabel('y')
 
-class fit: #class where each instance of x and y values contains its predicted linear equation and graph
+class fit: #class where each instance of x and y values contains its linear regression model and its graph
 
     def __init__(self,x,y):
         self.x = x
@@ -38,7 +40,7 @@ class fit: #class where each instance of x and y values contains its predicted l
         self.b0, self.b1 = estimate_coef(self.x,self.y)
         self.b = (float(self.b0), float(self.b1))
     def __str__(self):
-        return f'y = {self.b0}x + {self.b1}'  #prints linear equation of the instance
+        return f'y = {self.b0}x + {self.b1}'  #output is the equation when printed
     def predict(self,x_0):
         y_pred = self.b1*(x_0) + self.b0
         return y_pred
