@@ -2,6 +2,7 @@
 Final Project for LIS4930
 
 Research Question: “Where are the National Center for Education NAEP’s Mathematics Scale Scores currently trending?”
+
 Method of Solution: Linear Regression, Quadratic Regression to visualize the data and form conclusions.
 
 Objectives: 
@@ -13,5 +14,6 @@ Objectives:
       b. Graph the line/quadratic of best for for the average scores of economically (dis)advantaged 4th and 8th grade students
       
   4. Make Observations concerning the positive/negative trend of the data as well as the strength of the correlation to its line/quadratic of best fit.
+
 Similar Work: NCES posts regular data visualizations of certain aspects of their data. 
  
